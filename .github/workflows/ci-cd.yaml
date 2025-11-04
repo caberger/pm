@@ -9,3 +9,11 @@ jobs:
           ./render.sh
         working-directory: plant-uml
 
+      - uses: xresloader/upload-to-github-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "*.md;*.svg"
+          overwrite: true
+          verbose: true
+          update_latest_release: true
