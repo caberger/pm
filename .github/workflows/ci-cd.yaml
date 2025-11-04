@@ -6,4 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: |
-          ls -l
+          ./render.sh
+        working-directory: plant-uml
+
