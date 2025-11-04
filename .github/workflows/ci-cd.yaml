@@ -14,8 +14,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
 #          file: "**/*.svg"
-          file: "**/*.svg"
+          file: "plant-uml/**/*.svg"
           overwrite: true
           verbose: true
           update_latest_release: true
-          working-directory: plant-uml
