@@ -13,7 +13,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: "**/*.svg"
+#          file: "**/*.svg"
+          file: "./plant-uml/target/*.svg"
           overwrite: true
           verbose: true
           update_latest_release: true
