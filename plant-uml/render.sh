@@ -3,9 +3,9 @@
 
 ## render a state diagram with plant-uml docker
 
-mkdir -p target
-cp *.puml target
-pushd target
+mkdir -p public
+cp *.puml public
+pushd public
     rm -f *.png *.svg
     echo "PWD is $(pwd)"
 
